@@ -10,7 +10,9 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 #%matplotlib inline
 
 pd.set_option('display.max_columns', 120)
-with pd.HDFStore("/Users/Unikang/PycharmProjects/NoDota/src/data/train.h5", "r") as train:
+with pd.HDFStore("../../data/train.h5", "r") as train:
     # Note that the "train" dataframe is the only dataframe in the file
     df = train.get("train")
-df.head()
+d = df.head()
+
+print(d)
