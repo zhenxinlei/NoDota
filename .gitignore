@@ -1,2 +1,2 @@
 *.idea
-./src/ata
+src/data/*
